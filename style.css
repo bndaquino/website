@@ -1,0 +1,26 @@
+body {
+  max-width: 40rem;        /* ~70 characters per line, which is comfortable to read */
+  margin: 0 auto;          /* "auto" left/right margins center the column */
+  padding: 2rem 1rem;      /* breathing room, especially on phones */
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: #222;
+  background: #fdfdfb;
+}
+
+a { color: #1a5fb4; }
+header { margin-bottom: 2rem; }
+img { max-width: 100%; }   /* images never overflow the column */
+
+h1, h2 { line-height: 1.2; }
+time { color: #777; }
+
+.post-list { list-style: none; padding: 0; }
+.post-list li { display: flex; gap: 1rem; margin-bottom: 0.5rem; }
+.post-list time { flex-shrink: 0; font-variant-numeric: tabular-nums; }
+
+blockquote { margin-left: 0; padding-left: 1rem; border-left: 3px solid #ddd; color: #555; }
+code { font-size: 0.9em; }
+
+.katex-display { overflow-x: auto; overflow-y: hidden; }
