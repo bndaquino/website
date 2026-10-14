@@ -23,7 +23,7 @@ time { color: #777; }
 blockquote { margin-left: 0; padding-left: 1rem; border-left: 3px solid #ddd; color: #555; }
 code { font-size: 0.9em; }
 
-.katex-display { overflow-x: auto; overflow-y: hidden; }
+.katex-display { overflow-x: auto; overflow-y: hidden; padding-right: 2px; }
 
 figure { margin: 2rem 0; text-align: center; }
 figcaption { font-size: 0.9em; color: #555; }
