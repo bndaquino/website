@@ -1,7 +1,12 @@
----
-title: Hello, world
-date: 2026-10-11
----
++++
+title = "Hello, world"
+date = 2026-10-11
+description = "The first post on this site, and a tour of basic formatting."
+
+[taxonomies]
+tags = ["meta"]
++++
+
 
 Here is a blog written in pure HTML and CSS. I will later use a framework, but this is a nice way for me to see the things that the frameworks are doing for me.
 

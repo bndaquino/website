@@ -22,4 +22,4 @@ ax.legend(frameon=False)
 
 # Save next to this script, no matter which folder you run it from
 out = Path(__file__).parent / "plot.svg"
-fig.savefig(out, bbox_inches="tight", transparent=True)
+fig.savefig(out, bbox_inches="tight", transparent=False)

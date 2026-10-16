@@ -11,6 +11,8 @@ generate_feeds = false # Whether to generate a feed file in root, read docs for 
 feed_filenames = ["feed.xml"] # "feed.xml" | "atom.xml" | "rss.xml", read docs for more info
 taxonomies = [{ name = "tags" }, { name = "categories" }]
 
+ignored_content = ["*.py"]
+
 [markdown]
 render_emoji = false
 external_links_target_blank = false
@@ -35,7 +37,9 @@ anchors = "on"
 
 nav = [
   { name = "blog", path = "/blog" },
+  { name = "tags", path = "/tags" },
 ]
+
 
 name = "Brendan D'Aquino"
 handle = "bndaquino"
