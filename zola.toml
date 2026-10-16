@@ -38,13 +38,14 @@ anchors = "on"
 nav = [
   { name = "blog", path = "/blog" },
   { name = "tags", path = "/tags" },
+  { name = "about", path = "/about" },
 ]
 
 
 name = "Brendan D'Aquino"
 handle = "bndaquino"
 bio = "Space for a short bio here"
-# avatar = "img/avatar.webp"
+avatar = "img/avatar.jpg"
 links = [
   { name = "GitHub", icon = "github", url = "https://github.com/bndaquino" },
 ]

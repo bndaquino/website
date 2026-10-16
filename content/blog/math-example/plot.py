@@ -3,11 +3,10 @@ from pathlib import Path
 import matplotlib.pyplot as plt
 import numpy as np
 
-# Match the site's font: Times for text, STIX (a Times-like math font) for $...$
 plt.rcParams.update({
-    "font.family": "serif",
-    "font.serif": ["Times New Roman"],
-    "mathtext.fontset": "stix",
+    "font.family": "sans-serif",
+    "font.sans-serif": ["Helvetica Neue"],
+    "mathtext.fontset": "stixsans",
     "font.size": 12,
 })
 

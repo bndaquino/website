@@ -2,7 +2,7 @@
 title = "Zola"
 date = 2026-10-15
 description = "Moving this site to Zola and Serene."
-draft = true
+# draft = true
 
 [taxonomies]
 tags = ["meta"]
