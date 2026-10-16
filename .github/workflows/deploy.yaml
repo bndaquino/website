@@ -1,0 +1,41 @@
+name: Deploy site
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repo and the Serene theme
+        uses: actions/checkout@v7
+        with:
+          submodules: true
+
+      - name: Build with Zola and upload the site
+        uses: getzola/github-pages@435a833fd3f1edcb28d70576c89e30a6365cd8f7
+        with:
+          zola_version: v0.23.6
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v5
